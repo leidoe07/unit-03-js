@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>My Madlibs</h1>
+    <img src="seameme.png" style="width: 50% ; align-items:center ">
+    <br>
+  
+    <label>Name
+
+        <input id="name">  
+    </label>
+
+    <br>
+    <br>
+    <label> Color
+
+        <input   type="color"  id=" char">  
+    </label>
+
+    <br> <br>
+    <label> a sea animal
+
+        <input id="animal" oninput="myStory()">   
+    </label>
+  <br>
+  <br>
+
+  <label> verb
+
+    <input id="verb">   
+</label>
+<br>
+<br>
+
+
+
+
+<label> adjective ending in ‘ce’
+
+    <input id="adj" oninput="myStory()">   
+</label>
+<br>
+<br>
+
+
+
+<label> insulting response
+
+    <input id="insult" oninput="myStory()">   
+</label>
+<br>
+<br>
+
+
+<label> another verb
+
+    <input id="verb2" oninput="myStory()">   
+</label>
+<br>
+<br>
+
+
+
+
+
+
+  <button onclick="clickMe()">Click me</button>
+
+<h1 id="myStory">  </h1>
+
+
+
+
+
+  <script>
+    let nameInput = document.getElementById("name");
+
+    let animalInput = document.getElementById("animal");
+    
+    let verbInput = document.getElementById("verb");
+
+    let adjInput = document.getElementById("adj");
+
+    let insultInput = document.getElementById("insult");
+   
+    let verb2Input = document.getElementById("verb2");
+
+   
+
+
+function myStory() {
+let storyOutput = document.getElementById("myStory")
+nameOutput.innerText = There once was a _sea animal_ that lived in the atlantic ocean with its family.  The _ sea animal_ was young in contrast  its siblings who were _age1_ and _age2_. This was a problem because the  sibling always forced the _ sea animal_   to __verb__ and used its _adjective ending in ‘ce’__. One day the siblings tried to force the_ sea animal_  to  __verb__  but it refused and responded__insulting response___. So, the siblings __verb2__ into the air and onto sand and the _sea animal_  dried out and died.
+
+
+}
+  </script>
+
+</body>
+</html>

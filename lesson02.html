@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interaction Example</title>
+</head>
+<body>
+    <h1>Lesson 02</h1>
+    <label for="name">Name:</label>
+    <input id="name" aria-label="Enter your name" oninput="updateGreeting()">
+    <br><br>
+    <button onclick="clickMe()">Click me</button>
+    <h1 id="myGreeting" aria-live="polite">Hi there!</h1>
+
+    <script>
+        let nameInput = document.getElementById("name");
+
+        function updateGreeting() {
+            let nameOutput = document.getElementById("myGreeting");
+            nameOutput.innerText = "Hi " + nameInput.value;
+        }
+
+        function clickMe() {
+            console.log(nameInput.value);
+        }
+    </script>
+</body>
+</html>
